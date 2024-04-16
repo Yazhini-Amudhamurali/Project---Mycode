@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body style="text-align: center;">
+    <p class="btn" id="bn">first</p>
+    <p class="btn" id="bn">second</p>
+    <p class="btn" id="bn"> third</p>
+    <p class="btn" id="bn">fourth</p>
+
+    <button onclick="fun1()">query selector</button>
+    <button onclick="fun2()">query selector All</button>
+
+    <script>
+        // example for query selector 
+        // query selector returns the first element matches the css selector
+        // only take the first element
+function fun1(){
+    document.querySelector("p").style.backgroundColor = "green";
+}
+function fun2(){
+// query selector all  returns  all the matches
+ var fun = document.querySelectorAll("p"); // store the getting matches in a variable
+ // using for loop for moving to next lines
+ for(var i=0; i<fun.length; i++){
+    // apply css to the variable
+fun[i].style.backgroundColor = "red";}
+}
+
+// for accessing through class use(.)
+// for accessing through id use(#)
+// can also access through the element name in the html
+
+
+    </script>
+    
+</body>
+</html>

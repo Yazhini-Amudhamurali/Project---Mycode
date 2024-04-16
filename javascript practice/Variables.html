@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> variables </title>
+</head>
+<body>
+    <script>
+       var sbi = 100;
+       //first transaction @ ramanad
+       var atm1 = sbi-20;
+       document.write(atm1);
+    sbi = atm1;
+    document .write("<br>");// for breaking the statement
+    // 2nd transaction @ madurai
+    var atm2 = sbi-15;
+    document.write(atm2);
+    sbi = atm2;
+    document.write("<br>");
+    // 3rd transaction @ trichy
+    var atm3 = sbi -10;
+    document.write(atm3);
+    sbi = atm3;
+    document.write("<br>");
+    document.write("bank balance" + sbi);
+
+    // global variable
+    // variable should declare outside function
+    // can access anywhere with in the program
+function a(){
+    var b =30;// local variable
+
+    //  if we does't mention variables with keywords it may take as global variable
+    c = 70;
+console.log("inside"+sbi);// inside the function
+console.log("local inside"+ b);
+}
+a();
+console.log("outside"+ sbi); // outside the function
+//console.log("outside " + b);//  local variable can't access outside
+
+console.log(c);// can access this variable even it inside a function
+
+//local variable
+// declare only inside the function
+// only access inside the function
+
+    </script>
+    
+</body>
+</html>

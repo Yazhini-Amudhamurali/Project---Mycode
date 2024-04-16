@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects basic</title>
+</head>
+<body>
+  <script>
+// mostly the object is created with"const " variable"
+// object contain so many  "name: value"
+// object has properties anthe their property value , method
+
+const names = {name1: "world",
+ name2:"famous", 
+ name3: "movie",
+name4 : function(){return this.name1 + " " + this.name2}
+}
+document.write(names.name1 + " + " + names.name2 + " = " + names.name3);
+// object must call by objectName + dot operator + property name/ method name
+document.write("<br>")
+document.write(names.name4())
+
+  </script>  
+</body>
+</html>

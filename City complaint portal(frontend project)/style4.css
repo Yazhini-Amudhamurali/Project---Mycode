@@ -1,0 +1,248 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:burlywood;
+    background-attachment: fixed;
+
+}
+
+header {
+ 
+    color: #fff;
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/header_background.jpg);
+
+    text-shadow: 2px 2px 2px black;
+    font-size: 30px;
+    display: flex;
+    gap: 100px;
+   
+}
+.logo{
+margin-left: 0;
+
+}
+.heading{
+    justify-content: center;
+    text-align: center;
+    padding-left: 10%;
+}
+
+.topic{
+    height: 35px;
+    max-width: 100% ;
+    background-color: orangered;
+    margin-top: 8px;
+    color: #fff;
+    padding-left: 15px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+
+}
+#register{
+    height: 100%;
+    width:100% ;
+}
+
+.menu{
+    height: 35px;
+    max-width: 100% ;
+    background-color: dodgerblue;
+    margin-top: 8px;
+    color: white;
+    padding-left: 55px;
+    padding-bottom: 20px;
+}
+
+#order{
+    height:100% ;
+    width: 100% ;
+}
+nav{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+      display: flex ;
+      align-items: center ;
+
+     
+      }
+
+    nav ul{
+        display: flex;
+        float: right;
+        gap: 87px;
+        text-decoration: none;
+        padding-left: 10%;
+       
+    }
+    nav ul li {
+        list-style-type: none;
+    }
+    nav ul li a{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+      
+       
+        
+        }
+        nav ul li a:hover{
+        
+            color: crimson;
+            transition:1ms;
+        }
+
+        #loginForm{
+width: 300px;
+margin: 7vh auto 0 auto;
+background-color:white;
+border-radius: 5px;
+padding: 30px;
+ }
+    #loginForm button  {
+background-color: dodgerblue;
+
+border: 1px solid dodgerblue;
+border-radius: 5px;
+padding: 15px;
+margin: 20px 0px;
+cursor: pointer;
+
+width: 100%;
+ }
+
+#loginForm button:hover{
+   background-color: rgb(255, 128, 0);
+}
+
+ #loginForm button a{
+display: block;
+text-align: center;
+text-decoration: none;
+color: #fff;
+font-size: 15px;
+
+
+ }
+    .input-group{
+display: flex;
+flex-direction: column;
+margin-bottom: 15px;
+ }
+
+ .input-group input{
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid rgba(4, 169, 245, 0.957)
+ }
+ 
+ footer{
+    background-color: #333;
+color: white;
+padding: 20px;
+margin-top: 15px;
+font-family: Arial, sans-serif ;
+height: 180px;
+
+
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.contact,
+.social {
+    flex-basis: 10%;
+   
+   
+   margin-right: 20px;
+   padding-left: 40px;
+}
+.quick-links{
+    flex-basis: 20%;
+}
+
+
+
+
+.social h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  
+   
+    }
+  
+.contact h5{
+    color: #fff;
+    font-size: 14px;
+}
+
+.quick-links ul,
+.social ul {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.quick-links  p{
+   color: white;
+    text-decoration: none;
+}
+
+.social ul {
+    list-style-type: none;
+    padding-left: 0;
+ 
+
+}
+
+
+
+
+
+
+
+ #loginForm .input-group input:focus,
+             #loginForm .input-group input:valid{
+                border-color:rgba(245, 141, 4, 0.957) ;
+             }  
+             @media (max-width:584px) {
+                #loginForm{
+                    max-width: 100%;
+                }
+                #loginForm .input-group{
+           
+                    width: 100%;
+           margin-bottom: 15px;
+                     
+                        }
+                      
+                        #loginForm{
+                            max-height: 300px;
+                            overflow-y: scroll;
+                        }
+                        #loginForm::-webkit-scrollbar{
+                            width: 0;
+                        }
+             }          
+
+
+
+ 
